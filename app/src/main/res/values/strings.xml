@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LinearLayout</string>
+    <string name="danial_image">danial image</string>
+    <string name="name">Tarek Idrees</string>
+    <string name="job">Software Engineer</string>
+    <string name="location">EG</string>
+    <string name="reviews_number">(150 Reviews)</string>
+    <string name="stars_rate">4.5</string>
+    <string name="time">3 hr</string>
+    <string name="nationality">Syrian</string>
+    <string name="last_day_active">5 Days ago</string>
+
+</resources>

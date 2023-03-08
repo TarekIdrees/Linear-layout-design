@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_width">93dp</dimen>
+    <dimen name="image_height">93dp</dimen>
+
+    <dimen name="card_radius">8dp</dimen>
+    <dimen name="image_radius">8dp</dimen>
+    <dimen name="redChipRadius">100dp</dimen>
+
+    <dimen name="largeMargin">16dp</dimen>
+    <dimen name="normalMargin">12dp</dimen>
+    <dimen name="smallMargin">8dp</dimen>
+    <dimen name="specialMargin">4dp</dimen>
+
+    <dimen name="normalPadding">12dp</dimen>
+    <dimen name="smallPadding">8dp</dimen>
+    <dimen name="specialPadding">4dp</dimen>
+
+    <dimen name="largeText">16sp</dimen>
+    <dimen name="normalText">12sp</dimen>
+    <dimen name="specialText">13sp</dimen>
+
+</resources>

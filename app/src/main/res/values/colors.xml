@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#F8F8F8</color>
+    <color name="chip_background_color">#FE0D0D</color>
+
+    <color name="black">#000</color>
+    <color name="white">#FFFF</color>
+
+    <color name="secondary_text_color">#DE122940</color>
+    <color name="tertiary_text_color">#99263238</color>
+
+    <color name="last_active_text_color">#A1A9B2</color>
+    <color name="location_icon_color">#FF0D0D</color>
+    <color name="star_color">#F9D100</color>
+</resources>
