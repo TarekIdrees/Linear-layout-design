@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/card_background"
         android:layout_margin="@dimen/largeMargin"
-        android:paddingStart="@dimen/normalPadding"
-        android:paddingEnd="@dimen/smallPadding"
+        android:background="@drawable/card_background"
+        android:orientation="horizontal"
         android:paddingVertical="@dimen/normalPadding"
-        >
+        android:paddingStart="@dimen/normalPadding"
+        android:paddingEnd="@dimen/smallPadding">
+
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="@dimen/image_width"
             android:layout_height="@dimen/image_height"
+            android:contentDescription="@string/danial_image"
             android:src="@drawable/daniel_image"
-            app:shapeAppearanceOverlay="@style/RoundedImageView"
-            android:contentDescription="@string/danial_image"/>
+            app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="start"
             android:layout_marginStart="@dimen/normalMargin"
-            >
+            android:gravity="start"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
                 android:text="@string/name"
                 android:textColor="@color/black"
                 android:textSize="@dimen/largeText"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -49,41 +49,32 @@
                 android:textColor="@color/secondary_text_color"
                 android:textSize="@dimen/normalText" />
 
-            <LinearLayout
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:layout_marginTop="@dimen/smallMargin"
-                >
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_location"
-                    android:contentDescription="@string/location" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/specialMargin"
-                    android:fontFamily="@font/dm_sans_regular"
-                    android:text="@string/location"
-                    android:textColor="@color/tertiary_text_color"
-                    android:textSize="@dimen/specialText"/>
-            </LinearLayout>
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/dm_sans_regular"
+                android:text="@string/location"
+                android:textColor="@color/tertiary_text_color"
+                android:textSize="@dimen/specialText"
+                app:drawableStartCompat="@drawable/ic_location" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:layout_marginTop="@dimen/smallMargin"
-                >
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/dm_sans_regular"
                     android:text="@string/reviews_number"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/normalText"/>
+                    android:textSize="@dimen/normalText" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -91,23 +82,20 @@
                     android:fontFamily="@font/dm_sans_medium"
                     android:text="@string/stars_rate"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/normalText"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/specialMargin"
-                    android:src="@drawable/ic_star_rate"
-                    android:contentDescription="@string/stars_rate" />
+                    android:textSize="@dimen/normalText"
+                    android:drawablePadding="4dp"
+                    app:drawableEndCompat="@drawable/ic_star_rate" />
             </LinearLayout>
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="end"
             android:layout_marginStart="@dimen/normalMargin"
-            >
+            android:gravity="end"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -117,8 +105,8 @@
                 android:paddingVertical="@dimen/specialPadding"
                 android:text="@string/time"
                 android:textColor="@color/white"
-                android:textSize="@dimen/normalText"
-                />
+                android:textSize="@dimen/normalText" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -126,7 +114,8 @@
                 android:fontFamily="@font/dm_sans_medium"
                 android:text="@string/nationality"
                 android:textColor="@color/secondary_text_color"
-                android:textSize="@dimen/normalText"/>
+                android:textSize="@dimen/normalText" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -134,7 +123,7 @@
                 android:fontFamily="@font/dm_sans_regular"
                 android:text="@string/last_day_active"
                 android:textColor="@color/last_active_text_color"
-                android:textSize="@dimen/normalText"/>
+                android:textSize="@dimen/normalText" />
         </LinearLayout>
 
     </LinearLayout>
